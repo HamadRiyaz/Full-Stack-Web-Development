@@ -1,0 +1,223 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:"Poppins",sans-serif;
+}
+
+/* ================= NAVBAR ================= */
+.navbar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 60px;
+    background:#fff;
+    box-shadow:0 6px 18px rgba(0,0,0,0.08);
+}
+
+.navbar nav a{
+    margin:0 18px;
+    text-decoration:none;
+    color:#1a365d;
+    font-weight:500;
+    transition:.3s;
+}
+
+.navbar nav a:hover{
+    color:#2196f3;
+}
+
+.logo img{
+    width:85px;
+}
+
+.contact{
+    padding:6px 18px;
+    border-radius:20px;
+    border:2px solid #1a365d;
+    background:white;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.contact:hover{
+    background:#2196f3;
+    color:white;
+    transform:scale(1.05);
+}
+
+/* ================= BACKGROUND ================= */
+.b1{
+    background:url(bus.jpg) no-repeat center/cover;
+    min-height:100vh;
+}
+
+/* ================= LEFT CONTENT ================= */
+.b2{
+    width:42%;
+    float:left;
+    margin:90px 0 0 50px;
+    color:#1a365d;
+}
+
+#h6{
+    font-size:48px;
+    margin:25px 0;
+    line-height:1.2;
+}
+
+.text{
+    font-size:18px;
+    margin:20px 0 30px;
+    color:#2b4c7e;
+}
+
+#p1{
+    background:#1a365d;
+    color:white;
+    font-size:26px;
+    border-radius:50%;
+    padding:12px 16px;
+    border:none;
+    margin-right:15px;
+}
+
+/* ================= LOGIN FORM ================= */
+.form{
+    width:38%;
+    float:right;
+    margin:90px 40px 40px;
+    background:rgba(255,255,255,0.95);
+    padding:35px;
+    border-radius:12px;
+    box-shadow:0 12px 30px rgba(0,0,0,0.15);
+}
+
+/* Passenger / Admin buttons */
+.b5,.b6{
+    width:45%;
+    padding:10px;
+    margin:5px;
+    border:none;
+    border-radius:10px;
+    background:#f5f7fa;
+    color:#1a365d;
+    font-size:18px;
+    font-weight:600;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.b5:hover,.b6:hover{
+    background:#2196f3;
+    color:white;
+}
+
+/* Login title button */
+.login{
+    width:100%;
+    padding:10px;
+    margin:15px 0;
+    border-radius:8px;
+    border:1px solid #1a365d;
+    background:white;
+    font-weight:600;
+}
+
+/* Labels */
+.F1{
+    margin-top:12px;
+    font-weight:600;
+    color:#1a365d;
+}
+
+/* Inputs */
+.F2{
+    width:100%;
+    padding:10px 14px;
+    border-radius:8px;
+    border:1px solid #ccc;
+    margin-top:6px;
+    font-size:15px;
+}
+
+.F2:focus{
+    outline:none;
+    border-color:#2196f3;
+}
+
+/* Submit button */
+.btn{
+    width:100%;
+    padding:12px;
+    margin-top:20px;
+    background:#1a365d;
+    color:white;
+    border:none;
+    border-radius:10px;
+    font-weight:700;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.btn:hover{
+    background:#2196f3;
+}
+
+/* ================= FOOTER ================= */
+#d2{
+    clear:both;
+    background:#1a365d;
+    padding:50px 60px;
+    display:flex;
+    justify-content:space-between;
+    flex-wrap:wrap;
+    margin-top:120px;
+}
+
+#h3,#h4{
+    color:white;
+    margin-bottom:15px;
+}
+
+#p6{
+    color:#dce6f2;
+    line-height:1.6;
+}
+
+#d4 p{
+    color:white;
+    margin:6px 0;
+}
+
+#pre{
+    color:white;
+    margin:6px 0;
+    cursor:pointer;
+}
+
+#pre:hover{
+    text-decoration:underline;
+}
+
+.section{
+    color:white;
+}
+
+.social span{
+    font-size:24px;
+    margin-right:12px;
+    cursor:pointer;
+}
+
+.social span:hover{
+    color:#2196f3;
+}
+
+.last{
+    width:100%;
+    text-align:center;
+    margin-top:30px;
+    color:#dce6f2;
+    font-size:14px;
+}

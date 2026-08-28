@@ -1,0 +1,194 @@
+		{
+    		margin: 0;
+    		padding: 0;
+    		box-sizing: border-box;
+    		font-family: "Poppins", sans-serif;
+    		
+		}
+			.navbar{
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+				padding: 20px 60px;
+				background: white;
+				box-shadow: 0 2px 20px rgba(0,0,0,0.05);
+				max-height: 38px;
+			}
+			.navbar nav a{
+				margin: 0 15px;
+    			text-decoration: none;
+    			color: #222;
+    			font-weight: 300;
+
+			}
+			.logo img{
+				width: 90px;
+			}
+			.signin{
+				border-radius: 20px;
+				cursor: pointer;
+				font-weight: 300;
+				border: 2px solid;
+				height: 30px;
+				transition: background-color 0.4s, transform 0.3s;
+				 
+			}
+			.signin:hover {
+  			background-color: #2196f3; 
+  			transform: scale(1.1);
+			}
+			.secondpart {
+				/*height of section*/
+				position: relative;
+				height: 80vh;
+			}
+			.secondpart .background{
+				background:url('homebus.jpg') 
+				no-repeat 
+				center/cover;
+    			height: 100%; 
+				filter: blur(1.5px);
+				z-index: -1;/*text behind*/
+			}
+			.content {
+				/*freefloating*/
+    			position: absolute;
+    			/*on top of  25*/
+    			top: 15%;
+    			/*left side se 60px*/
+    			left: 60px;
+    			max-width: 400px;
+    			color:white;
+    		}
+    		.secondpart h1{
+    			font-size: 40px;
+    			font-weight: 700;
+    		}
+    		.secondpart p{
+    			 margin: 15px 0;
+    			font-size: 17px;
+    		}
+    		.bookingb{
+    			background: #1b3d6d;
+    			color: white;
+    			border-radius:30px;
+    			cursor: pointer;
+				font-weight: 300;
+				height: 40px;
+				width: 95px;
+				border: none;
+				
+    		}
+    		.routsb{
+    				margin: 0px 0px 0px 10px;
+    				color: #1b3d6d;
+    				border-radius: 30px;
+					cursor: pointer;
+					font-weight: 300;
+					height: 40px;
+					border: none;
+    		}
+    		.search{
+   			 		background:#1b3d6d; 
+   				 	padding: 20px;
+   				 	margin: -10px auto;
+    				width: 80%;
+    				display: flex;
+    				gap: 20px;
+    				border-radius: 20px;
+    				box-shadow: 0 5px 25px rgba(0,0,0,0.1);
+    				margin-top: 20px;
+			}	
+			.box {
+				/*For all space same*/
+				flex: 1;
+			}
+			.search input{
+				 width: 100%;
+    			 padding: 10px;
+    			 margin-top: 5px;
+    			 border-radius: 12px;
+    			 border: 1px solid #ccc;
+			}
+			.search-btn{
+				padding: 0 20px;
+    			border-radius: 15px;
+    			background: white;
+    			color: white;
+    			border: none;
+    			cursor: pointer;
+    			height: 40px;
+    			margin-top: 20px;	
+			}
+			.box label{
+				font-weight: 700;
+				color: white;
+			}
+			.choose{
+					text-align: center;
+					padding: 80px 40px;
+			}
+			.choose h2{
+				font-weight: 700;
+				font-size: 30px;
+			}
+			.cards{
+				display: flex;
+				justify-content: center;
+				margin-top: 50px;
+				gap: 30px;
+			}
+			.cards > * {
+  			animation: float 3s ease-in-out infinite;
+			}
+			@keyframes float {
+  			0%   { transform: translateY(0); }
+  			50%  { transform: translateY(-20px); }
+  			100% { transform: translateY(0); }
+			}
+
+			.c {
+    			background: white;
+    			padding: 30px;
+    			width: 300px;
+    			border-radius: 20px;
+    			box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+			}
+			footer {
+   				 background: #0d1b2a;
+    			color: white;
+    			padding: 60px 40px;
+    			margin-top: 50px;
+			}
+			.container {
+    			display: flex;
+    			justify-content: space-between;
+    			flex-wrap: wrap;
+
+			}
+			.section{
+				    margin-bottom: 15px;
+				    
+			}
+			.section a {
+    			display: block;
+    			margin: 6px 0;
+    			color: #ccc;
+    			text-decoration: none;
+			}
+			.section h3{
+				color: white;
+			}
+			.social span {
+    		font-size: 25px;
+    		margin-right: 10px;
+    		cursor: pointer;
+			}	
+
+			.last{
+    		text-align: center;
+    		margin-top: 30px;
+			}
+			
+
+	
