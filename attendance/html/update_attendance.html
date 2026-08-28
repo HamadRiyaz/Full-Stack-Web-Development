@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html >
+<head>
+   
+    <title>Update Attendance</title>
+<link  rel="stylesheet" href="attendance_update.css">
+</head>
+<body>
+
+<h2>Update Attendance</h2>
+<form method="post" action="">
+    <table border="1" cellpadding="10">
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Attendance</th>
+        </tr>
+        <?php foreach($students as $student){ ?>
+        <tr>
+            <td><?php echo $student['id']; ?></td>
+            <td><?php echo $student['name']; ?></td>
+            <td>
+                <select name="att_<?php echo $student['id']; ?>">
+                    <option value="Absent" <?php if($student['attendance']=='Absent') echo 'selected'; ?>Absent</option>
+                    <option value="Present" <?php if($student['attendance']=='Present') echo 'selected'; ?>Present</option>
+                </select>
+            </td>
+        </tr>
+        <?php } ?>
+    </table>
+    <br>
+    <button type="submit" name="update_attendance">Save Attendance</button>
+</form>
+
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Information System</title>
+    <link rel="stylesheet" href="login_dashboard.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="logo-box">
+            <img src="logo.png" alt="University Logo">
+        </div>
+
+        <div class="uni_name">
+            <h2>VAST University</h2>
+            <p>Gujranwala</p>
+        </div>
+
+        <div class="ems">
+            <h2 style="margin-right: 50px;">Faculty Login</h2>
+        </div>
+    </header>
+
+    <div class="login-container">
+
+        <div class="login-title">
+            Faculty Login
+        </div>
+
+        <div class="login-content">
+
+            <!-- START: FORM ADDED -->
+            <form action="login_teacher.php" method="POST">
+
+                <div class="input-box">
+                    <input type="text" name="user_id" placeholder="User ID" required>
+                </div>
+
+                <div class="input-box">
+                    <input type="password" name="password" placeholder="Password" required>
+                </div>
+
+                <button class="login-btn" type="submit" name="login">Login</button>
+
+                <div class="forgot">
+                    Forgot Your Password?
+                </div>
+
+            </form>
+            <!-- END: FORM -->
+
+        </div>
+    </div>
+
+</body>
+</html>

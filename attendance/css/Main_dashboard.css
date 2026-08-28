@@ -1,0 +1,152 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: linear-gradient(
+        180deg,
+        #eef4f9 0%,
+        #e3edf6 50%,
+        #d6e4f0 100%
+    );
+}
+
+.header {
+    position: relative;
+    background-color: #5a2d82;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    padding-left: 140px;
+    padding-right: 40px;
+    color: white;
+    margin-top: 40px;
+}
+
+
+.logo-box {
+    position: absolute;
+    left: 30px;
+    top: -30px;
+    height: 160px;
+    width: 160px;
+    background-color: white;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.logo-box img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+
+.header h2 {
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+
+.header p {
+    font-size: 14px;
+}
+
+.uni_name {
+    margin-left: 100px;
+}
+
+.ems {
+    position: absolute;
+    right: 40px;
+    top: 30px;
+    text-align: right;
+}
+
+
+.container {
+    padding: 40px;
+    text-align: center;
+}
+
+.container h1 {
+    margin-bottom: 30px;
+}
+
+
+.portal-layout {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+
+.side-image {
+    width: 400px;
+    height: 350px;
+    background: linear-gradient(
+        135deg,
+        #cfddeb,
+        #b8cbe0
+    );
+    border-radius: 12px;
+    position: relative;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+}
+.side-image.left{
+     background-image: url("campuslife.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.side-image.right{
+     background-image: url("academic.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.image-text {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    right: 20px;
+    background: #5a2d82;
+    color: white;
+    padding: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 6px;
+}
+
+
+.cards {
+    display: grid;
+    gap: 20px;
+}
+
+
+.small-cards {
+    width: 280px;
+}
+
+.card {
+    background-color: white;
+    padding: 18px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 16px;
+}
+
+.card:hover {
+    background-color: #5a2d82;
+    color: white;
+    transform: translateY(-5px);
+}

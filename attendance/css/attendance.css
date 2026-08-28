@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: linear-gradient(
+        180deg,
+        #eef4f9,
+        #d6e4f0
+    );
+}
+
+/* Header */
+.top-header {
+    background: linear-gradient(90deg, #1f4fa3, #3a6fd8);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+    padding: 15px 40px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+/* Logo */
+.top-header img {
+    height: 55px;
+}
+
+/* Heading */
+.top-header h2 {
+    font-size: 24px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    margin-right: 500px;
+}
+/* Navbar */
+.navbar {
+    background-color: #ffffff;
+    padding: 10px 40px;
+    border-bottom: 2px solid #1f4fa3;
+    display: flex;
+    gap: 20px; /* clean spacing between links */
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #1f4fa3;
+    font-weight: bold;
+    position: relative; /* for underline animation */
+    padding: 5px 0;
+    transition: all 0.3s ease;
+}
+
+/* Hover effect */
+.navbar a:hover {
+    color: #ffffff; /* text becomes white */
+    background-color: #1f4fa3; /* background highlight */
+    padding: 5px 10px;
+    border-radius: 6px;
+    transform: scale(1.05);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.navbar a:hover::after {
+    width: 100%;
+}
+
+/* Main container */
+.container {
+    padding: 30px 40px;
+}
+
+/* Boxes */
+.box {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 25px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.box h3 {
+    margin-bottom: 15px;
+    color: #1f4fa3;
+}
+
+/* Info rows */
+.form-row {
+    display: flex;
+    gap: 40px;
+    margin-bottom: 10px;
+}
+
+/* Summary */
+.summary {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 15px;
+}
+
+/* Table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table th {
+    background-color: #cfe5ff;
+    padding: 10px;
+    border: 1px solid #a8c6ea;
+}
+
+table td {
+    padding: 10px;
+    border: 1px solid #d0d0d0;
+    text-align: center;
+}
+
+table td:nth-child(3) {
+    text-align: left;
+}
+
+/* Button */
+.action {
+    margin-top: 20px;
+    text-align: right;
+}
+
+button {
+    padding: 10px 25px;
+    background-color: #1f4fa3;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #163d80;
+}

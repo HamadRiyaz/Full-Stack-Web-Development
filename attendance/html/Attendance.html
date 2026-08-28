@@ -1,0 +1,80 @@
+<main class="container">
+    <div class="box">
+        <h3>Class Attendance</h3>
+
+        <div class="form-row">
+            <div><strong>Semester:</strong> Fall 2025</div>
+            <div><strong>Date:</strong> 26-Jan-2026</div>
+            <div><strong>Lecture Type:</strong> Regular</div>
+        </div>
+
+        <div class="form-row">
+            <div><strong>Subject:</strong> Software Engineering</div>
+            <div><strong>Time:</strong> 08:00 - 09:30</div>
+        </div>
+    </div>
+    <div class="box">
+        <h3>Students List</h3>
+
+        <div class="summary">
+            <p><strong>Total Lectures:</strong> 20</p>
+            <p><strong>Lectures Marked:</strong> 18</p>
+            <p><strong>Remaining:</strong> 2</p>
+        </div>
+
+        <!-- START: FORM -->
+        <form action="add_attendance.php" method="POST">
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Sr No</th>
+                    <th>Roll No</th>
+                    <th>Student Name</th>
+                    <th>Present</th>
+                    <th>Absent</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>23140001</td>
+                    <td>Ilham Shehzadi</td>
+                    <td><input type="radio" name="attendance[23140001]" value="Present" required></td>
+                    <td><input type="radio" name="attendance[23140001]" value="Absent"></td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>23140002</td>
+                    <td>Umme Ruman</td>
+                    <td><input type="radio" name="attendance[23140002]" value="Present" required></td>
+                    <td><input type="radio" name="attendance[23140002]" value="Absent"></td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>23140003</td>
+                    <td>Awaiza Choudry</td>
+                    <td><input type="radio" name="attendance[23140003]" value="Present" required></td>
+                    <td><input type="radio" name="attendance[23140003]" value="Absent"></td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>23140004</td>
+                    <td>Haifa Abrar</td>
+                    <td><input type="radio" name="attendance[23140004]" value="Present" required></td>
+                    <td><input type="radio" name="attendance[23140004]" value="Absent"></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="action">
+            <button type="submit" name="save_attendance">Save Attendance</button>
+        </div>
+
+        </form>
+        <!-- END: FORM -->
+
+    </div>
+
+</main>

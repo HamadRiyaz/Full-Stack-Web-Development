@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Information System</title>
+    <link rel="stylesheet" href="faculty_dashboard.css">
+</head>
+<body>
+
+<header class="header">
+    <div class="logo-box">
+        <img src="logo.png" alt="University Logo">
+    </div>
+
+    <div class="uni_name">
+        <h2>VAST University</h2>
+        <p>Gujranwala</p>
+    </div>
+
+    <div class="ems">
+        <h2 style="margin-right: 50px;">Faculty Dashboard</h2>
+    </div>
+    <div class="logout-button" style="margin-left:auto;">
+        <button onclick="window.location.href='faculty_login.html'" 
+                style="
+                    padding: 8px 16px;
+                    background:#e74c3c;
+                    color:white;
+                    border:none;
+                    border-radius:5px;
+                    cursor:pointer;
+                    font-weight:bold;
+                    margin-top: 150px ;
+                ">
+            Logout
+        </button>
+    </div>
+</header>
+<div class="dashboard-cards">
+    <div class="card">
+        <div class="card-icon">👨‍🎓</div>
+        <h3>Manage Students</h3>
+        <p>Add, update, or remove student records.</p>
+        <button class="card-button" onclick="window.location.href='teacher_panel.html'">Go to Students</button>
+    </div>
+
+    <div class="card">
+        <div class="card-icon">📋</div>
+        <h3>Attendance</h3>
+        <p>Mark or view student attendance records.</p>
+        <button class="card-button" onclick="window.location.href='attendance.html'">Go to Attendance</button>
+    </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,122 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-image: url("teacher_dashboard.jpg");
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+}
+
+/* Header */
+.header {
+    position: relative;
+    background-color: #5a2d82;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    padding-left: 140px;
+    padding-right: 40px;
+    color: white;
+    margin-top: 40px;
+}
+
+.logo-box {
+    position: absolute;
+    left: 30px;
+    top: -30px;
+    height: 160px;
+    width: 160px;
+    background-color: white;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.logo-box img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.header h2 {
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+
+.header p {
+    font-size: 14px;
+}
+
+.uni_name {
+    margin-left: 100px;
+}
+
+.ems {
+    position: absolute;
+    right: 30px;
+    text-align: center;
+}
+
+/* Cards Container */
+.dashboard-cards {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    position: absolute;
+    bottom: 50px;
+    width: 100%;
+}
+
+/* Card */
+.card {
+    background: rgba(255, 255, 255, 0.95);
+    width: 250px;
+    padding: 30px 20px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.4);
+}
+
+/* Card Icon */
+.card-icon {
+    font-size: 50px;
+    margin-bottom: 15px;
+}
+
+/* Card Title */
+.card h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+    color: #5a2d82;
+}
+
+/* Card Text */
+.card p {
+    font-size: 14px;
+    color: #333;
+}
+
+/* Card Button */
+.card-button {
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #5a2d82;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.card-button:hover {
+    background-color: #7b42b3;
+    transform: translateY(-3px);
+}
